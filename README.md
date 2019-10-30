@@ -1,4 +1,4 @@
-#Aplikacja potfolio.
+# Aplikacja potfolio.
 
 Wytyczne zadania:
 1.    HTML/CSS
