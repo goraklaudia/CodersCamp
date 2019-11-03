@@ -5,6 +5,8 @@
 body {
     background: rgb(230, 230, 230);
     margin: 0;
+    margin-bottom: 7%;
+
     
 }
 
@@ -28,25 +30,6 @@ h1  {
     color: white;
 
 }
-
-@media only screen and (max-width: 1000px) {
-    .image-container{
-        font-size: 2vw;
-    }
-
-    .description {
-        font-size: 2vw;
-    }
-  }
-
-@media only screen and (max-width: 500px) {
-    #nav-item {
-        font-size: 3vw;
-    }
-    .nav {
-        height: 10vw;
-    }
-  }
 
 #nav-item:hover {
     color: rgb(180, 180, 180);
@@ -78,22 +61,8 @@ h1  {
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
 }
-/* 
-.images-text {
-    position: absolute;
-    color: white;
-    font-size: 4vw;
-    font-family: 'Patrick Hand', cursive;
-    padding: auto;
-    text-align: center;
-    animation-name: imagetextanomation;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-} */
 
-.description {
+.description, .portal-description {
     font-family: 'Muli', sans-serif;
     text-align: justify;
 }
@@ -125,42 +94,6 @@ h1  {
 }
 
 
-@media only screen and ( max-width: 1300px) {
-    .image-container {
-        /* grid-template-rows: 1fr 1fr 1fr ; */
-        /* grid-template-rows: 30% 30%; */
-        font-size: 15px;
-    }
-  }
-
-@media only screen and ( max-width: 1100px) {
-    .image-container {
-        font-size: 14px;
-        /* grid-template-rows: 1fr 1fr 2fr ; */
-    }
-  }
-
-
-@media only screen and ( max-width: 900px) {
-    .image-container {
-        /* grid-template-rows: 1fr 2fr 2fr ; */
-        grid-template-columns: 1fr;
-        font-size: 13px;
-    }
-  }
-
-@keyframes imageanomation {
-    0% {    background-image: url("images/idealne-miejsce-pracy.jpg");    max-width: 100%;}
-    50% {     background-image: url("images/2441226-uniwersytet-657-323.jpg");max-width: 100%;}
-    100% {     background-image: url("images/piłka-nożna-szczecin-i-okolice-752x440.jpg");max-width: 100%;}
-}
-/* 
-@keyframes imagetextanomation {
-    0% { content: "Programowanie" }
-    50% { content: "Wykształcenie" }
-    100% { content: "Hobby" }
-} */
-
 .fas, .far{
     margin: auto;
 }
@@ -179,14 +112,50 @@ h1  {
     padding: 1%;
 }
 
-@media only screen and ( max-width: 900px) {
+@media only screen and (max-width: 1100px) {
+    .image-container {
+        font-size: 1.45vw;
+    }
+  }
 
+@media only screen and (max-width: 900px) {
+.image-container {
+    font-size: 2vw;
+}
+}
+
+@media only screen and (max-width: 500px) {
+    #nav-item {
+        font-size: 3vw;
+    }
+    .nav {
+        height: 10vw;
+    }
+  }
+
+
+
+@media only screen and ( max-width: 900px) {
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+  }
+
+
+@media only screen and ( max-width: 900px) {
     .footer {
         font-size: 1.5vw;
         padding: 1.5%;
     }
     
   }
+
+  
+@keyframes imageanomation {
+    0% {    background-image: url("images/idealne-miejsce-pracy.jpg");    max-width: 100%;}
+    50% {     background-image: url("images/2441226-uniwersytet-657-323.jpg");max-width: 100%;}
+    100% {     background-image: url("images/piłka-nożna-szczecin-i-okolice-752x440.jpg");max-width: 100%;}
+}
 /* 
 
 font-family: 'Patrick Hand', cursive;
